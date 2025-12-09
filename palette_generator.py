@@ -2,11 +2,11 @@ import cv2
 import numpy as np 
 import matplotlib.pyplot as plt
 
-#import matplotlib
-#matplotlib.use("Agg")
+import matplotlib
+matplotlib.use("Agg")
 
 
-image_path = "capybara.jpg"
+image_path = "IMAGES/ocean.jpg"
 image = cv2.imread(image_path)
 
 if image is None:
@@ -24,9 +24,9 @@ if max(height, width) > max_size:
     image = cv2.resize(image, new_size)
     print(f"Resized image to {new_size} for faster processing")
 
-plt.imshow(image) 
-plt.axis('off') 
-plt.show()
+#plt.imshow(image) 
+#plt.axis('off') 
+#plt.show()
 
 
 pixels = image.reshape((-1,3))
@@ -49,9 +49,9 @@ for i,colors in enumerate(centers):
     palette[:,start_pt:end_pt] = colors
 
 plt.figure(figsize=(6,2))
-plt.imshow(palette)
-plt.axis('off') 
-plt.show()
+#plt.imshow(palette)
+#plt.axis('off') 
+#plt.show()
 
 import os
 

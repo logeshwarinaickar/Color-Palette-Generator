@@ -25,7 +25,7 @@ Welcome to the **Color Palette Generator**! This is a simple Python-based projec
 ```
 📁 Color-Palette-Generator/
 ├── 📄 main.py           # Main Python script
-├── 📁 image/            # Folder for input images
+├── 📁 IMAGES/            # Folder for input images
 ├── 📁 output/
 │    ├── images/         # Copies of input images
 │    ├── palettes/       # Generated color palette images
@@ -45,7 +45,7 @@ Welcome to the **Color Palette Generator**! This is a simple Python-based projec
    ```sh
    pip install numpy opencv-python matplotlib
    ```
-3. Put your input images in the `image/` folder.
+3. Put your input images in the `IMAGES/` folder.
 4. Run the script:
 
    ```sh
